@@ -21,4 +21,4 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("ui_up"):
 			motion.y = JUMP
 	
-	motion = move_and_slide(motion, RESISTANCE)
+	motion = move_and_slide(motion, RESISTANCE) # move_and_slide never will have a bigger value than motion
