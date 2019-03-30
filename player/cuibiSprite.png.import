@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cuibi.png-294533a3d41b383b3f0f3ddfbfced033.stex"
+path="res://.import/cuibiSprite.png-faa9a92f26178c5de4bfd1649600bddc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/cuibi.png"
-dest_files=[ "res://.import/cuibi.png-294533a3d41b383b3f0f3ddfbfced033.stex" ]
+source_file="res://Player/cuibiSprite.png"
+dest_files=[ "res://.import/cuibiSprite.png-faa9a92f26178c5de4bfd1649600bddc.stex" ]
 
 [params]
 
