@@ -1,43 +1,16 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Tiles/Ground.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tiles/tileTest.tres" type="TileSet" id=2]
 
 [node name="world" type="Node2D"]
 
-[node name="GroundGroup" type="Node2D" parent="."]
-editor/display_folded = true
-
-[node name="Ground" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 32, 352 )
-
-[node name="Ground2" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 96, 352 )
-
-[node name="Ground3" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 160, 352 )
-
-[node name="Ground4" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 224, 352 )
-
-[node name="Ground5" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 288, 352 )
-
-[node name="Ground6" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 352, 352 )
-
-[node name="Ground7" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 416, 352 )
-
-[node name="Ground8" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 480, 352 )
-
-[node name="Ground9" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 544, 352 )
-
-[node name="Ground10" parent="GroundGroup" instance=ExtResource( 1 )]
-position = Vector2( 608, 352 )
-
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 32, 296.527 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 458767, 1, 0, 458768, 1, 0, 458770, 1, 0, 458773, 1, 0, 458777, 1, 0, 458781, 1, 0, 458782, 1, 0, 458783, 1, 0, 524303, 1, 0, 524304, 1, 0, 524306, 1, 0, 524309, 1, 0, 524313, 1, 0, 524317, 1, 0, 524319, 1, 0, 589839, 1, 0, 589840, 1, 0, 589842, 1, 0, 589845, 1, 0, 589849, 1, 0, 589853, 1, 0, 589855, 1, 0, 655375, 1, 0, 655378, 1, 0, 655381, 1, 0, 655385, 1, 0, 655389, 1, 0, 655391, 1, 0, 720911, 1, 0, 720914, 1, 0, 720917, 1, 0, 720918, 1, 0, 720921, 1, 0, 720922, 1, 0, 720925, 1, 0, 720926, 1, 0, 720927, 1, 0, 1048576, 1, 0, 1048577, 1, 0, 1048578, 1, 0, 1048579, 1, 0, 1048580, 1, 0, 1114112, 1, 0, 1114116, 1, 0, 1114117, 1, 0, 1114118, 1, 0, 1179648, 1, 0, 1179686, 1, 0, 1179687, 1, 0, 1245184, 1, 0, 1245215, 1, 0, 1245216, 1, 0, 1245222, 1, 0, 1245223, 1, 0, 1310720, 1, 0, 1310745, 1, 0, 1310746, 1, 0, 1310747, 1, 0, 1310751, 1, 0, 1310752, 1, 0, 1310758, 1, 0, 1310759, 1, 0, 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376262, 0, 0, 1376263, 0, 0, 1376264, 0, 0, 1376265, 0, 0, 1376266, 0, 0, 1376267, 0, 0, 1376268, 0, 0, 1376269, 0, 0, 1376270, 0, 0, 1376271, 0, 0, 1376272, 0, 0, 1376273, 0, 0, 1376274, 0, 0, 1376275, 0, 0, 1376276, 0, 0, 1376277, 0, 0, 1376278, 0, 0, 1376279, 0, 0, 1376280, 0, 0, 1376281, 0, 0, 1376282, 0, 0, 1376283, 0, 0, 1376284, 0, 0, 1376285, 0, 0, 1376286, 0, 0, 1376287, 0, 0, 1376288, 0, 0, 1376289, 0, 0, 1376290, 0, 0, 1376291, 0, 0, 1376292, 0, 0, 1376293, 0, 0, 1376294, 0, 0, 1376295, 0, 0 )
 
